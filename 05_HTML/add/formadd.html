@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
-</body>
 </html>
 <body>
     <h1>Заполните анкету</h1>
@@ -16,20 +13,20 @@
         <fieldset>
 
             <legend>Личные данные</legend>
-            <input type="text" size="25" pattern="[А-Яа-яЁё]{1,25}" required autofocus><br>
-            <input type="text" size="20" pattern="[А-Яа-яЁё]{1,20}" required><br>
-            <input type="text" size="24" pattern="[А-Яа-яЁё]{1,24}" required><br>
+            <input type="text" size="25" name="last_name" pattern="[А-Яа-яЁё]{1,25}" required autofocus><br>
+            <input type="text" size="20" name="Name" pattern="[А-Яа-яЁё]{1,20}" required><br>
+            <input type="text" size="24" name="patronymic" pattern="[А-Яа-яЁё]{1,24}" required><br>
 
             <fieldset> 
                 <legend>Паспортные данные</legend>
-                <input type="text" size="2" pattern="[A-Z]{2,2}" required>
-                <input type="text" size="7" pattern="[0-7]{7}" required >
+                <input type="text" name="seria_alf" size="2" pattern="[A-Z]{2,2}" required>
+                <input type="text" name="seria_number" size="7" pattern="[0-7]{7}" required >
             </fieldset>
 
             <fieldset>
                 <legend>Дата рождения</legend>
-                <input type="text" pattern="[0-9]{4}"><br>
-                <select name="" id="">
+                <input type="text" name="year" pattern="[0-9]{4}"><br>
+                <select name="mes" id="">
                     <option value="Январь">Январь</option>
                     <option value="Февраль">Февраль</option>
                     <option value="Март">Март</option>
@@ -43,7 +40,7 @@
                     <option value="Ноябрь">Ноябрь</option>
                     <option value="Декабрь">Декабрь</option>
                 </select><br>
-                <input type="number" min="1" max="31"><br>
+                <input type="number" name="day" min="1" max="31"><br>
             </fieldset>
 
             <br>
@@ -61,10 +58,10 @@
 
             <fieldset>
                 <legend>Хобби</legend>
-                    <input type="checkbox" name="Hobby[]">Рыбалка<br>
-                    <input type="checkbox" name="Hobby[]">Астрономия<br>
-                    <input type="checkbox" name="Hobby[]">Дайвинг<br>
-                    <input type="checkbox" name="Hobby[]">Марки<br>
+                    <input type="checkbox" value="Рыбалка" name="Hobby[]">Рыбалка<br>
+                    <input type="checkbox" value="Астрономия" name="Hobby[]">Астрономия<br>
+                    <input type="checkbox" value="Дайвинг" name="Hobby[]">Дайвинг<br>
+                    <input type="checkbox" value="Марки" name="Hobby[]">Марки<br>
             </fieldset>
 
             <fieldset>
@@ -92,20 +89,20 @@
 
         <fieldset>
             <legend>Данные для входа и восстановления пароля </legend>
-            <input required type="text" size="20" pattern="[А-Яа-яЁё]{5,}"><br>
-            <input required type="password" size="20" pattern="[А-Яа-яЁё]{10,}">
+            <input required type="text" name="Login" size="20" pattern="[А-Яа-яЁё]{5,}"><br>
+            <input required type="password" name="Password" size="20" pattern="[А-Яа-яЁё]{10,}">
         </fieldset>
 
         <fieldset>
             <legend>Координаты: </legend>
-            <input type="email"><br>
-            <input type="url">
+            <input type="email" name="mail"><br>
+            <input type="url" name="url_site">
         </fieldset>
 
         <fieldset>
             <legend>Цифры </legend>
-            <input type="number" min="-2.5" max="2.5" step="0.1"><br>
-            <input type="range" min="1" max="10">
+            <input type="number" name="number" min="-2.5" max="2.5" step="0.1"><br>
+            <input type="range" name="range" min="1" max="10">
         </fieldset>
 
         <fieldset>
