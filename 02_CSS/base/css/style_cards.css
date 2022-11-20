@@ -1,0 +1,49 @@
+
+.cards
+{
+    margin: 100px 400px
+}
+.card_1
+{
+    width: 140px;
+    height: 190px;
+    background-image: url('../img/cards.7e0a18f0.png');
+    background-position: -430px -1800px;
+    float: left;
+}
+.card_2
+{
+    width: 140px;
+    height: 190px;
+    background-image: url('../img/cards.7e0a18f0.png');
+    background-position: -285px -1800px;
+    float: left;
+    margin: 90px 0 0 -30px;
+}
+.card_3
+{
+    width: 140px;
+    height: 190px;
+    background-image: url('../img/cards.7e0a18f0.png');
+    background-position: -285px -2000px;
+    float: left;
+    margin: 0px 0 0 -30px;
+}
+.card_4
+{
+    width: 140px;
+    height: 190px;
+    background-image: url('../img/cards.7e0a18f0.png');
+    background-position: -285px -2390px;
+    float: left;
+    margin: 250px 0 0 -130px;
+}
+.card_5
+{
+     width: 140px;
+     height: 190px;
+     background-image: url('../img/cards.7e0a18f0.png');
+     background-position: 0px -2190px;
+     float: left;
+     margin: 240px 0 0 -330px;
+}
