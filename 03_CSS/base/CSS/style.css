@@ -1,0 +1,58 @@
+.list
+{
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+}
+.list li
+{
+    position: relative;
+}
+.list>li
+{
+     border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    background-color: gainsboro;
+    width: 95px;
+}
+.list>li:hover .food li
+{
+    display: block;
+    border-bottom: none;
+}
+.link
+{
+    text-decoration: none;
+}
+.food li
+{
+    display: none;
+    list-style-type: none;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    background-color: gainsboro;
+    width: 95px;
+    margin: 0px -41px;
+}
+
+@media(max-width: 800px )
+{
+    .list
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+.food
+{
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+.food li
+{
+   border-width: 2px;
+}
+}
