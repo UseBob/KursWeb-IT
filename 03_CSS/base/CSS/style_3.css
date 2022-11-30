@@ -6,22 +6,17 @@
     border-style: solid;
     border-width: 2px;
     width: 95px;
-    transition: 1s ease-out;
 }
 .food
 {
     display: none;
     list-style-type: none;
-    transition: 1s ease-in;
-
 }
 
 .day:hover .food
 {
     display: block;
     margin: 0 0 0 -41px;
-    transition: 1s ease-in;
-
 }
 
 .food li
