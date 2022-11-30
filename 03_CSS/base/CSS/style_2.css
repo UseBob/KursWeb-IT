@@ -1,0 +1,53 @@
+.day
+{
+    background-color: gainsboro ;
+    border: solid;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 2px;
+    float: left;
+    width: 95px;
+    
+}
+.container_eat
+{
+    display: none; 
+}
+
+.day:hover .container_eat
+{
+    display: block;
+}
+.eat
+{
+    border: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    background-color: gainsboro ;
+}
+@media(max-width: 800px )
+{
+    .day
+    {
+        float: none;
+        position: relative;
+    }
+    .day:hover .container_eat
+    {
+        display: block;
+        position:absolute;
+        top: 0 ;
+        left: 100px;
+        margin: 0 0 0 -3px;
+    }
+    .eat
+    {
+        border: solid;
+        border-radius: 5px;
+        border-width: 2px;
+    }
+
+}

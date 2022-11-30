@@ -1,0 +1,56 @@
+.day
+{
+    float: left;
+    border-radius: 5px;
+    background-color: gainsboro ;
+    border-style: solid;
+    border-width: 2px;
+    width: 95px;
+    transition: 1s ease-out;
+}
+.food
+{
+    display: none;
+    list-style-type: none;
+    transition: 1s ease-in;
+
+}
+
+.day:hover .food
+{
+    display: block;
+    margin: 0 0 0 -41px;
+    transition: 1s ease-in;
+
+}
+
+.food li
+{
+    border-radius: 5px;
+    background-color: gainsboro ;
+    border-style: solid;
+    border-width: 2px 0 0 0;
+    width: 95px;
+}
+
+@media(max-width: 800px )
+{
+    .day
+    {
+        position: relative;
+        float: none;
+    }
+    .food li
+    {
+        border: solid;
+        border-width: 2px;
+    }
+    .day:hover .food
+    {
+        display: block;
+        position:absolute;
+        top: 0;
+        left: 100px;
+    }
+
+}
