@@ -1,0 +1,31 @@
+p
+{
+    border-style: groove;
+    border-radius: 0 15px 0 15px;
+    width: 800px;
+    padding: 0 5px 0 5px
+}
+.ref
+{
+    display: none;
+}
+
+span:hover .ref
+{
+    display: inline-block;
+}
+
+.list
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.list li
+{
+    background: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLBQoPDQwFDQ8gCRAKIBEWIiAdHxMYLDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5RDMBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIABEAEQMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAABwMF/8QAJhAAAQQCAQIGAwAAAAAAAAAAAQIDBAUABhESIRUyM0FhgRMjMf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCh1+v0trfbM/aVFfNeTtsdCXLWKyt0N+GQjx1KB7ck9vnM9k1mgr4USVAo6yLJb3PXuh6vhsJfTzZRweFJHI7Ej7zeJaM1F3sKJsWz/fszDrS6+snuMLZ8PiJ5DjSCPMlQ/vtnK1anF7bLuLaFNIg7NbKjDcEyfyqeVJUppxpp/wBJCWikAADqV3IBaQSFAxjGAxjGAxjGB//Z) 0 2px no-repeat;
+    padding: 0 0 0 20px;
+}
+
+
+
