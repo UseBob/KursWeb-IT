@@ -1,3 +1,8 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
 .day
 {
     float: left;
@@ -10,19 +15,18 @@
 }
 .food 
 {   
-    display: none;
+    display: block;
+    position: absolute;
     list-style-type: none;
-    margin: 0 0 0 -41px;
-    transition-duration: 2s;
-    transition-timing-function: ease-out;
-    transition-delay: 0.5s;
-    transition-property: top;
+    height: 0;
+    overflow: hidden;
+    transition: 2s;
 }
 
-.day:hover .food
+.day:hover ul
 {
-    display: block;
-    top: 0;
+    height: 66px; 
+      
 }
 
 .food li
@@ -30,8 +34,9 @@
     border-radius: 5px;
     background-color: gainsboro ;
     border-style: solid;
-    border-width: 2px 2px 0 2px;
+    border-width: 2px;
     width: 95px;
+    height: 20px;
 }
 
 
@@ -49,7 +54,7 @@
     }
     .day:hover .food
     {
-        display: block;
+        
         position:absolute;
         top: 0;
         left: 100px;
