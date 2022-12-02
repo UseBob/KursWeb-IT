@@ -1,0 +1,72 @@
+
+table
+{
+    margin: 60px 0 0 300px;
+    padding: 0px;
+    border: solid;
+    border-spacing: 0;
+    border-width: 6px;
+    counter-reset: my_counter 65;
+    position: relative;
+}
+ tr
+{
+    border-spacing: 0; 
+}
+ td
+{
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+    counter-increment: my_counter -1;
+}
+
+table tr:nth-child(2n-1) td:nth-child(2n-1)
+{
+    background-color: black;
+    width: 80px;
+    height: 80px;
+}
+
+table tr:nth-child(2n-1) td:nth-child(2n)
+{
+    background-color:floralwhite;
+    width: 80px;
+    height: 80px;
+}
+
+table tr:nth-child(2n-1) td:nth-child(2n)::before
+{
+    color: rgb(0, 0, 0);
+}
+
+table tr:nth-child(2n) td:nth-child(2n-1)
+{
+    background-color:floralwhite;
+    width: 80px;
+    height: 80px;
+}
+
+table tr:nth-child(2n) td:nth-child(2n-1)::before
+{
+    color: rgb(0, 0, 0);
+}
+
+table tr:nth-child(2n) td:nth-child(2n)
+{
+    background-color: black;
+    width: 80px;
+    height: 80px;
+}
+
+table td::before
+{
+    content: counter(my_counter);
+    font-size: 50px;
+    line-height: 30px;
+    color: floralwhite;
+    margin: 0 0 0 15px;
+}
+
+
+

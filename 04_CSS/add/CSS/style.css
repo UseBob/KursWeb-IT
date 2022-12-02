@@ -1,0 +1,37 @@
+p
+{
+    border-style: groove;
+    border-radius: 0 15px 0 15px;
+    width: 800px;
+    padding: 0 5px 0 5px
+}
+
+a[href^='DOC']::after  
+{
+    content: url(img/word.jfif);   /* Если вставлять ссылку то всё работает */
+}
+a[href^='PDF']::after
+{
+    content: url('img/pdf.png');  /* Тут регшил добавить апостроф, но эффект тот же, в браузере выдаёт ошибку,
+     но через ссылку работает. */
+}
+a[href^='arch']::after
+{
+    content: url(data:image/gif;base64,R0lGODlhEAAQAMQUAP/ntQDe3v+tAP+9Sv+tIf//92vG/2uM////jP/WjP/31gCU3v/GawAxUozW/wBjlN6UAP////8AAAAAAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAABQALAAAAAAQABAAAAVoICWOU2k2IyWt1PQsSxAYB6oiCdOY/OOgq6CQNXFMVJGkApAjCI7Fo0SpyA0EEKgRWVg2IdnWduplDMDhqKoLMGPBWmmZgE6PefiSz5ZywWQ0fCkteIKDfQuHgy4TC4wPihQPjI6TFCEAOw==);
+}
+a[href$='list']::before
+{
+    content: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLBQoPDQwFDQ8gCRAKIBEWIiAdHxMYLDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5RDMBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIABEAEQMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAABwMF/8QAJhAAAQQCAQIGAwAAAAAAAAAAAQIDBAUABhESIRUyM0FhgRMjMf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCh1+v0trfbM/aVFfNeTtsdCXLWKyt0N+GQjx1KB7ck9vnM9k1mgr4USVAo6yLJb3PXuh6vhsJfTzZRweFJHI7Ej7zeJaM1F3sKJsWz/fszDrS6+snuMLZ8PiJ5DjSCPMlQ/vtnK1anF7bLuLaFNIg7NbKjDcEyfyqeVJUppxpp/wBJCWikAADqV3IBaQSFAxjGAxjGAxjGB//Z);
+}
+
+a[href*='link']:hover::before
+{
+    content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAVklEQVR4Xn3PgQkAMQhDUXfqTu7kTtkpd5RA8AInfArtQ2iRXFWT2QedAfttj2FsPIOE1eCOlEuoWWjgzYaB/IkeGOrxXhqB+uA9Bfcm0lAZuh+YIeAD+cAqSz4kCMUAAAAASUVORK5CYII=);
+}
+
+.list_container
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
