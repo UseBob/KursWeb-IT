@@ -1,0 +1,46 @@
+table
+{
+    margin: 100px 0 0 200px;
+    padding: 0px;
+    border: solid;
+    border-spacing: 0;
+    border-width: 6px;
+}
+table tr
+{
+    border-spacing: 0; 
+}
+table td
+{
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+}
+
+table tr:nth-child(2n-1) td:nth-child(2n-1)
+{
+    background-color: black;
+    width: 80px;
+    height: 80px;
+}
+
+table tr:nth-child(2n-1) td:nth-child(2n)
+{
+    background-color:floralwhite;
+    width: 80px;
+    height: 80px;
+}
+
+table tr:nth-child(2n) td:nth-child(2n-1)
+{
+    background-color:floralwhite;
+    width: 80px;
+    height: 80px;
+}
+
+table tr:nth-child(2n) td:nth-child(2n)
+{
+    background-color: black;
+    width: 80px;
+    height: 80px;
+}
